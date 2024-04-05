@@ -15,7 +15,7 @@ Neste capítulo, abordaremos a importância e os requisitos para o design de sis
 
 Neste capítulo, exploramos os fundamentos da engenharia de dados e sua relação com o aprendizado de máquina. Reconhecemos a relação íntima entre big data e ML, enfatizando a importância do armazenamento de dados e sua estruturação. Destacamos a coleta, processamento, armazenamento e recuperação de grandes volumes de dados visando a construção de sistemas de ML em produção. Exploramos as diferentes fontes de dados e seus métodos de leitura, tratamento e treinamento, bem como os formatos de dados, como JSON, CSV e Parquet, e suas características. Analisamos os modelos de dados, como o relacional e o NoSQL, e suas aplicações, além de distinguir entre dados estruturados e não estruturados, destacando suas características e usos. Observamos as vantagens e desvantagens de cada tipo de dado e apresentamos exemplos práticos.
 
-# Cap 04 - Treinando os dados 
+# Capítulo 04 - Treinando os dados 
 O capítulo em questão parte da pespectiva da ciência de dados mediante os dados de treinamento. Uma observação importante que notei, foi a importância em observar a presença de viés nos modelos de Machine Learning, tendo em vista a qualidade dos dados que estão sendo utilizados.
 
 # Amostragem
