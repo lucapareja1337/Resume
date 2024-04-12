@@ -111,3 +111,37 @@ Adicionar amostras ruidosas aos dados, induzindo o modelo ao erro. É útil para
 Síntese de dados, consiste em sintetizar a base de dados para otimizar o trabalho imposto ao modelo.
 
 O capítulo 4, compila uma série de mecanismos e etapas que nos ajudam a compreender como é possível desenvolver uma trilha adequada para o desenvolvimento de um modelo de Machine Learning. Tópicos como Pertubação e Data Augmentation, apontam formas interessantes de se adaptar o processo de condução de um projeto, abrindo portas para o teste de vulnerabilidades no modelo e aumento artificial do volume de dados para aprimorar o nível de aprendizado. Além disso, propostas para rotulagem de dados, são sempre bem vindas para buscar o melhor valor na aplicação do modelo. Tudo isso somado, constitui um conjunto de algumas das boas práticas para a produção de um modelo de machine learning resiliente.
+
+# Resumo do Capítulo 05: Engenharia de Features
+
+As features bem formatadas desempenham um papel fundamental na construção de modelos eficazes.
+
+# Features Aprendidas vs. Features Projetadas
+
+Nem todas as features podem ser derivadas automaticamente por algoritmos. Uma ilustração clara disso reside nas técnicas manuais de processamento textual, como a extração de n-gramas, remoção de HTML (usando expressões regulares) e lematização. Essas features podem ser modeladas como vetores e, consequentemente, utilizadas como entradas em modelos de aprendizado de máquina. As técnicas adotadas podem variar dependendo do contexto. No entanto, uma das aspirações do aprendizado profundo é automatizar esse processo, substituindo abordagens manuais por métodos mais eficientes, como a tokenização, que simplifica significativamente o processamento de texto.
+
+# Operações Comuns de Engenharia de Features
+
+Diversas técnicas são empregadas na projeção de features. No tratamento de valores ausentes, é essencial distinguir entre diferentes tipos de ausências, como Missing Not at Random (MNAR), Missing at Random (MAR) e Missing Completely at Random (MCAR). A deleção de valores ausentes é uma prática comum, embora deva ser realizada com cautela, uma vez que pode resultar na perda de informações úteis e introduzir viés no modelo. Por outro lado, a imputação de valores ausentes com base em estatísticas, como moda, média ou mediana, também apresenta desafios, como o risco de introduzir ruído e viés.
+
+# Escalonamento e Discretização
+
+O escalonamento é uma etapa essencial para garantir que as features estejam em uma escala comparável, especialmente em modelos sensíveis à escala, como os baseados em distância. A discretização, por sua vez, envolve a conversão de features contínuas em categorias discretas, o que pode facilitar a interpretação e o manuseio de certos tipos de dados.
+
+# Codificação de Features Categóricas
+
+A codificação de features categóricas é uma consideração crítica na engenharia de features, pois as categorias podem se comportar de maneira diferente ao longo do tempo. O "hashing trick" é uma técnica comum para lidar com categorias, embora possa apresentar problemas de colisão. A combinação de features (feature crossing) é outra estratégia útil, especialmente quando há interações não lineares entre as features.
+
+# Embeddings Posicionais
+
+Os embeddings posicionais emergiram como uma técnica poderosa, especialmente em problemas de Processamento de Linguagem Natural (PLN) e visão computacional. Esses embeddings representam uma fração de dados em um espaço vetorial com dimensões uniformes. Sua aplicação está sendo expandida para diversos domínios, oferecendo flexibilidade na representação de dados de entrada.
+
+# Data Leakage e Detecção
+
+O vazamento de dados é um fenômeno crítico que pode comprometer a integridade e a generalização do modelo. É crucial monitorar e detectar vazamentos em todas as etapas do ciclo de vida do modelo, desde a geração e coleta de dados até o processamento de features. Métricas como a capacidade preditiva e correlações coerentes são indicadores importantes na identificação de vazamentos.
+
+# Engenharia de Boas Features e Generalização
+
+Acrescentar features de forma criteriosa pode melhorar a capacidade preditiva do modelo, embora também possa aumentar o risco de sobreajuste e exigir mais recursos computacionais. A generalização das features é essencial para garantir que o modelo seja capaz de fazer previsões precisas em dados não vistos.
+
+
